@@ -1,7 +1,7 @@
 import { Trash } from "phosphor-react";
-import { AmountProductInput } from "../../components/AmountProductInput";
-import { useCart } from "../../hooks/useCart";
-import { formatPrice } from "../../utils/formatPrice";
+import { AmountProductInput } from "../AmountProductInput";
+import { useCart } from "../../../hooks/useCart";
+import { formatPrice } from "../../../utils/formatPrice";
 import {
   CheckoutItem,
   CheckoutItemButtons,
@@ -11,7 +11,7 @@ import {
   CheckoutItemTitleAmountWrapper,
   CheckoutRemoveItemButton
 } from "./styles";
-import { CoffeeProps } from '../CoffeeCard';
+import { CoffeeProps } from '../../Home/ProductCard';
 
 export function CheckoutProductItem({ coffee }: CoffeeProps) {
   const { removeProductCart } = useCart()

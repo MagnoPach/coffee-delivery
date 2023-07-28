@@ -3,11 +3,8 @@ import { CurrencyDollar } from "phosphor-react"
 import * as zod from "zod"
 import { useForm, FormProvider } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { CheckoutDeliveryForm } from "../../components/CheckoutDeliveryForm"
-import { CheckoutProductItem } from "../../components/CheckoutProductItem"
-import { ProductProps } from "../../components/CoffeeCard"
-import { CheckoutResume } from "../../components/CheckoutResume"
-import { PaymentMethods } from "../../components/PaymentMethods"
+import { CheckoutProductItem } from "./CheckoutProductItem"
+import { ProductProps } from "../Home/ProductCard"
 import { useCart } from "../../hooks/useCart"
 
 import {
@@ -24,6 +21,9 @@ import {
   PaymentMethodWrapper,
   WrapperTitle
 } from "./styles"
+import { CheckoutDeliveryForm } from "./CheckoutDeliveryForm"
+import { PaymentMethods } from "./PaymentMethods"
+import { CheckoutResume } from "./CheckoutResume"
 
 enum PaymentMethodsProps {
   credit = 'credit',
@@ -62,7 +62,7 @@ export function Checkout() {
   const navigate = useNavigate()
 
   function handleConfirmOrder(data: ConfirmOrderFormData) {
-    navigate('/checkout-done', {
+    navigate('/checkout-success', {
       state: data
     })
 

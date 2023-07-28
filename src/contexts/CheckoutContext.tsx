@@ -1,5 +1,5 @@
 import { createContext, ReactNode, useEffect, useState } from 'react'
-import { ProductProps } from '../components/CoffeeCard'
+import { ProductProps } from '../pages/Home/ProductCard'
 import { produce } from 'immer'
 
 interface CheckoutContextProviderProps {

@@ -18,7 +18,7 @@ export function Header() {
           <div>
             <LocationTag>
               <MapPin size={22} color='#8047F8' weight='fill' />
-              Rio do Sul, SC
+              Rio de Janeiro, RJ
             </LocationTag>
             <NavLink to="/checkout">
               <CartButton>

@@ -1,5 +1,6 @@
-import { useCart } from "../../hooks/useCart";
-import { formatPrice } from "../../utils/formatPrice";
+
+import { useCart } from "../../../hooks/useCart";
+import { formatPrice } from "../../../utils/formatPrice";
 import {
   CheckoutResumeRow,
   CheckoutResumeText,

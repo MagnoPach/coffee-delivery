@@ -1,6 +1,5 @@
 import { MapPinLine } from "phosphor-react";
 import { useFormContext } from "react-hook-form";
-import { Input } from "../Input";
 
 import {
   DeliveryFormWrapper,
@@ -11,6 +10,7 @@ import {
   FormInputRowWrapper,
   FormTextTitle,
 } from "./styles";
+import { Input } from "../../../components/Input";
 
 interface ErrorsType {
   errors: {

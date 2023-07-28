@@ -1,7 +1,7 @@
 import { ShoppingCartSimple } from "phosphor-react";
 import { useState } from "react";
-import { useCart } from "../../hooks/useCart";
-import { formatPrice } from "../../utils/formatPrice";
+import { useCart } from "../../../hooks/useCart";
+import { formatPrice } from "../../../utils/formatPrice";
 import {
   AddCartBtn,
   BuyActionWrapper,
@@ -34,7 +34,7 @@ export interface CoffeeProps {
   coffee: ProductProps
 }
 
-export function CoffeeCard({ coffee }: CoffeeProps) {
+export function ProductCard({ coffee }: CoffeeProps) {
   const [quantity, setQuantity] = useState(1)
   const { addProductCart } = useCart()
 

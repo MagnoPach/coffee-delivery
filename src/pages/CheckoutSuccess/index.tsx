@@ -2,7 +2,6 @@ import { useEffect } from "react"
 import { useLocation, useNavigate } from "react-router-dom"
 import { CurrencyDollar, MapPin, Timer } from "phosphor-react"
 import { OrderData } from "../Checkout"
-import { paymentMethodsList } from "../../components/PaymentMethods"
 
 import {
   CheckoutDoneContainer,
@@ -16,12 +15,13 @@ import {
   CheckoutTitle
 } from "./styles"
 import checkoutDone from '../../assets/checkoutDone.svg'
+import { paymentMethodsList } from "../Checkout/PaymentMethods"
 
 interface LocationType {
   state: OrderData
 }
 
-export function CheckoutDone() {
+export function CheckoutSuccess() {
 
   const { state } = useLocation() as unknown as LocationType
   const navigate = useNavigate()

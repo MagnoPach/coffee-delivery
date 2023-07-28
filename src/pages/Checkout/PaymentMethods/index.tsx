@@ -1,8 +1,8 @@
 import { Bank, CreditCard, Money } from "phosphor-react";
 import { useFormContext } from "react-hook-form";
-import { ErrorMessage } from "../Input/styles";
 import { PaymentMethodInput } from "../PaymentMethodInput";
 import {
+  ErrorMessage,
   PaymentMethodContentWrapper,
 } from "./styles";
 

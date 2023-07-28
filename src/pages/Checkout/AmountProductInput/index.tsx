@@ -1,5 +1,5 @@
-import { useCart } from "../../hooks/useCart";
-import { CoffeeProps } from "../CoffeeCard";
+import { useCart } from "../../../hooks/useCart";
+import { CoffeeProps } from "../../Home/ProductCard";
 import {
   BuyActionWrapper,
   ProductAmountInput,

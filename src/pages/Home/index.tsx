@@ -1,5 +1,4 @@
 import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
-import { CoffeeMenu } from '../../components/CoffeeMenu'
 
 import {
   Benefit,
@@ -17,6 +16,7 @@ import {
   TitleContainer
 } from './styles'
 import coffeeDeliverySplash from '../../assets/coffeeDeliverySplash.png'
+import { ProductMenu } from './ProductMenu'
 
 export function Home() {
   return (
@@ -77,7 +77,7 @@ export function Home() {
         </MenuTitle>
 
         <MenuItems>
-          <CoffeeMenu />
+          <ProductMenu />
         </MenuItems>
       </MenuContainer>
     </HomeContainer>

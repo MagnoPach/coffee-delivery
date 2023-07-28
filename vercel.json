@@ -9,7 +9,7 @@
       "dest": "/"
     },
     {
-      "src": "/checkout-done",
+      "src": "/checkout-success",
       "dest": "/"
     }
   ]
